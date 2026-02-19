@@ -1,0 +1,27 @@
+# Parent class
+class Vehicle:
+    def __init__(self):
+        self.type = "Generic Vehicle"
+        self.speed = 0
+
+    def start(self):
+        print(f"{self.type} is starting...")
+
+
+class Bike(Vehicle):
+    def __init__(self):
+        super().__init__()      
+        self.type = "Bike"       
+
+class Car(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self.type = "Car"
+        self.seats = 4
+
+b = Bike()
+b.start()
+
+c = Car()
+c.start()
+print("Number of seats =", c.seats)
