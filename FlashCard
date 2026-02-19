@@ -1,0 +1,28 @@
+class Flashcard:
+    def __init__(self, word, meaning):
+        self.word = word
+        self.meaning = meaning
+
+    def __str__(self):
+        return f"Word: {self.word} | Meaning: {self.meaning}"
+
+
+# list to store flashcards
+flashcards = []
+
+# taking number of flashcards from user
+n = int(input("How many flashcards do you want to create? "))
+
+# taking input for each flashcard
+for i in range(n):
+    word = input("Enter the word: ")
+    meaning = input("Enter the meaning: ")
+    card = Flashcard(word, meaning)
+    flashcards.append(card)
+
+# printing flashcards using while loop
+print("\nStored Flashcards:")
+i = 0
+while i < len(flashcards):
+    print(flashcards[i])
+    i += 1
