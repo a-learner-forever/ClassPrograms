@@ -1,0 +1,29 @@
+class Parent():
+    def __init__(self,id,name):
+        self.id = id
+        self.name = name
+    def display_Parent(self):
+        print("The value of ID in parent class is:",self.id)
+    
+    def display2_parent(self):
+        print("This is a method to print the value of name ", self.name)
+
+
+class Child(Parent):
+    def __init__(self,child_id,name):
+        self.child_id = child_id
+        self.name = name
+
+
+    def display_Parent(self):
+        return super().display_Parent()
+    
+    def display2_parent(self):
+        return super().display2_parent()
+    
+   
+    
+ob_P = Parent('id1','P1')
+ob_P.display2_parent()
+ob_C = Child('c1','cname')
+ob_C.display2_parent()
