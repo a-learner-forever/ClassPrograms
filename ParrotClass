@@ -1,0 +1,13 @@
+class Parrot:
+    def __init__(self, color, ptype):
+        self.color = color
+        self.ptype = ptype
+
+    def display(self):
+        print('The color of this Parrot is',self.color,'and the type is', self.ptype)
+
+ob1 = Parrot('Grey','African Grey Parrot')
+ob1.display()
+
+ob2 = Parrot('Bright red','Macaws Parrot')
+ob1.display()
