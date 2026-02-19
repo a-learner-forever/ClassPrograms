@@ -1,0 +1,13 @@
+class Employee:
+    def __init__(self, eid, salary):
+        self.eid=eid
+        self.salary = salary
+
+    def display(self):
+        print('The id is', self.eid,'The salary is',self.salary)
+
+ob1 = Employee('e001',4000000)
+ob1.display()
+
+
+
