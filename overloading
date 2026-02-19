@@ -1,0 +1,22 @@
+class MyList:
+    def __init__(self, data):
+        self.data = data
+
+    # overload the + operator
+    def __add__(self, other):
+        merged = self.data + other.data
+        return MyList(merged)
+
+    def display(self):
+        print(self.data)
+
+
+# creating two objects
+list1 = MyList([1, 2, 3])
+list2 = MyList([4, 5, 6])
+
+# using + operator (operator overloading)
+result = list1 + list2
+
+# displaying merged list
+result.display()
