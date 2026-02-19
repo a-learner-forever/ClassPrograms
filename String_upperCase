@@ -1,0 +1,12 @@
+class Str_Upper_Case:
+    def __init__(self, string_value):
+        self.string_value=string_value
+
+    def display(self):
+        print('The upper case of the given string is', self.string_value.upper())
+
+ob1 = Str_Upper_Case('i am the best !!')
+ob1.display()
+
+
+
