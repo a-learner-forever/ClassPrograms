@@ -1,0 +1,70 @@
+class Marks:
+    def __init__(self, marks):
+        self.marks = marks
+
+    def __add__(self, other):
+        return self.marks - other.marks
+    def __eq__(self, other):
+        return self.marks == other.marks
+
+# Create objects
+m1 = Marks(55)
+m2 = Marks(59)
+
+# Use + operator
+total = m1 + m2
+
+
+print("Total Marks:", total)
+print(m1==m2)
+
+
+
+# Arithmetic operators
+
+# __add__(self, other) → +
+
+# __sub__(self, other) → -
+
+# __mul__(self, other) → *
+
+# __truediv__(self, other) → /
+
+# __floordiv__(self, other) → //
+
+# __mod__(self, other) → %
+
+# __pow__(self, other) → **
+
+
+
+# Comparison operators
+
+# __eq__(self, other) → ==
+
+# __ne__(self, other) → !=
+
+# __lt__(self, other) → <
+
+# __le__(self, other) → <=
+
+# __gt__(self, other) → >
+
+# __ge__(self, other) → >=
+
+
+# Assignment operators
+
+# __iadd__(self, other) → +=
+
+# __isub__(self, other) → -=
+
+# __imul__(self, other) → *=
+
+# __itruediv__(self, other) → /=
+
+# __ifloordiv__(self, other) → //=
+
+# __imod__(self, other) → %=
+
+# __ipow__(self, other) → **=
