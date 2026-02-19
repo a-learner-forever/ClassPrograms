@@ -1,0 +1,27 @@
+class Robot:
+    def __init__(self, name, battery):
+        self.name = name                 # public variable
+        self.__battery = battery         # private variable
+
+    def greet(self):                     # public method
+        print(f"Hello, I am {self.name}.")
+        self.__check_battery()            # calling private method internally
+
+    def work(self):                      # public method
+        if self.__battery > 0:
+            self.__battery -= 10
+            print("Robot is working...")
+        else:
+            print("Battery empty!")
+
+    def __check_battery(self):            # private method
+        print(f"Battery level: {self.__battery}%")
+r1 = Robot("RoboOne", 50)
+r2 = Robot("RoboTwo", 30)
+
+r1.greet()
+
+r1.work()
+
+r2.greet()
+r2.work()
